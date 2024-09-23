@@ -104,3 +104,10 @@ button:active {
   box-shadow: 3px 2px 22px 1px black;
   /* Lowering the shadow */
 }
+
+.resetButton {
+  position: absolute;
+  bottom: 10px;
+  width: 25%;
+  left: 37.5%;
+}

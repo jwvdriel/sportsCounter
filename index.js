@@ -1,6 +1,6 @@
 let homeScoreDisplay = document.querySelector(".score-display-home");
 let awayScoreDisplay = document.querySelector(".score-display-away");
-
+const resetButton = document.querySelector(".resetButton");
 // selecting the parent elements
 const homeTeam = document.querySelector(".home");
 const awayTeam = document.querySelector(".away");
@@ -45,4 +45,12 @@ awayButtons.forEach((clicked) => {
       awayScoreDisplay.textContent = awayScore;
     }
   });
+});
+
+// reset scores
+resetButton.addEventListener("click", function () {
+  homeScoreDisplay.textContent = 0;
+  awayScoreDisplay.textContent = 0;
+  homeScore = 0;
+  awayScore = 0;
 });
